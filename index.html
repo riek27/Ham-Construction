@@ -7,13 +7,10 @@
     <meta name="keywords" content="Construction Juba, Building Contractors South Sudan, Residential Construction, Commercial Building, Precast Mouldings, Renovation Services Juba">
     <meta name="author" content="Ham Construction & Trading Co. Ltd">
     <meta name="theme-color" content="#0B1120">
-    
-    <!-- Open Graph -->
     <meta property="og:title" content="Ham Construction & Trading | Premium Construction Services in Juba">
     <meta property="og:description" content="Building excellence in Juba: residential, commercial projects, finishing, renovations & precast mouldings.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1541888946425-d81bb19240f5">
     <meta property="og:type" content="website">
-    
     <title>Ham Construction & Trading Co. Ltd | Premier Builders in Juba, South Sudan</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -61,37 +58,6 @@
             }
         }
     </script>
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-        body { background-color: #F8FAFC; color: #0B1120; overflow-x: hidden; line-height: 1.5; }
-        @media (min-width: 1024px) { .cursor-custom { cursor: none; } .cursor-dot { width: 8px; height: 8px; background: #D4AF37; border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; transition: transform 0.1s; } .cursor-outline { width: 40px; height: 40px; border: 1.5px solid rgba(212,175,55,0.5); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9998; transition: transform 0.2s ease, width 0.2s, height 0.2s; backdrop-filter: blur(2px); } }
-        .glass-nav { background: rgba(11, 17, 32, 0.85); backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .glass-panel { background: rgba(0,0,0,0.35); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.2); }
-        .glass-card-light { background: rgba(255,255,255,0.98); backdrop-filter: blur(8px); border: 1px solid rgba(212,175,55,0.2); box-shadow: 0 25px 40px -12px rgba(0,0,0,0.08); }
-        .text-gradient-gold { background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 60%, #D4AF37 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .btn-luxury { position: relative; overflow: hidden; transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
-        .btn-luxury::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transition: left 0.6s ease; }
-        .btn-luxury:hover::after { left: 100%; }
-        .reveal { opacity: 0; transform: translateY(35px); transition: all 0.9s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .reveal-left { opacity: 0; transform: translateX(-35px); transition: all 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
-        .reveal-left.active { opacity: 1; transform: translateX(0); }
-        .reveal-right { opacity: 0; transform: translateX(35px); transition: all 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
-        .reveal-right.active { opacity: 1; transform: translateX(0); }
-        .service-card { transition: all 0.5s cubic-bezier(0.2, 0.9, 0.4, 1.2); }
-        .service-card:hover { transform: translateY(-10px) scale(1.01); box-shadow: 0 35px 45px -20px rgba(0,0,0,0.2); }
-        .img-zoom { transition: transform 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
-        .img-zoom-container:hover .img-zoom { transform: scale(1.07); }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 10px; }
-        @media (max-width: 768px) { .hero-text-mobile { font-size: 2.5rem !important; line-height: 1.2 !important; } }
-        input:focus, textarea:focus { outline: none; border-color: #D4AF37; box-shadow: 0 0 0 3px rgba(212,175,55,0.2); }
-        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 30px -15px rgba(0,0,0,0.1); }
-    </style>
 </head>
 <body class="antialiased cursor-custom">
 
@@ -102,20 +68,19 @@
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-5 text-white">
         <div class="container mx-auto px-5 lg:px-8">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-xl md:text-2xl font-serif font-bold tracking-widest uppercase flex items-center gap-2 hover:opacity-80 transition">
+                <a href="index.html" class="text-xl md:text-2xl font-serif font-bold tracking-widest uppercase flex items-center gap-2 hover:opacity-80 transition">
                     <i data-lucide="building-2" class="text-haven-gold w-5 h-5 md:w-6 md:h-6"></i>
                     <span class="hidden xs:inline">Ham Construction</span>
                 </a>
                 <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
-                    <a href="#about" class="hover:text-haven-gold transition relative group">About<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
-                    <a href="#services" class="hover:text-haven-gold transition relative group">Services<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
-                    <a href="#portfolio" class="hover:text-haven-gold transition relative group">Projects<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
-                    <a href="#areas" class="hover:text-haven-gold transition relative group">Areas<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
-                    <a href="#reviews" class="hover:text-haven-gold transition relative group">Reviews<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
+                    <a href="about.html" class="hover:text-haven-gold transition relative group">About<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
+                    <a href="services.html" class="hover:text-haven-gold transition relative group">Services<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
+                    <a href="projects.html" class="hover:text-haven-gold transition relative group">Projects<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
+                    <a href="contact.html" class="hover:text-haven-gold transition relative group">Contact<span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-haven-gold transition-all group-hover:w-full"></span></a>
                 </div>
                 <div class="hidden lg:flex items-center gap-5">
                     <a href="tel:+211925888028" class="text-sm font-semibold text-haven-gold hover:text-white transition">092 588 8028</a>
-                    <a href="#contact" class="btn-luxury bg-haven-gold hover:bg-white text-haven-navy font-bold py-2.5 px-6 rounded-sm transition-all text-xs tracking-wider">Get Quote</a>
+                    <a href="contact.html" class="btn-luxury bg-haven-gold hover:bg-white text-haven-navy font-bold py-2.5 px-6 rounded-sm transition-all text-xs tracking-wider">Get Quote</a>
                 </div>
                 <button class="lg:hidden text-white p-2 hover:bg-white/10 rounded-lg" onclick="toggleMenu()" aria-label="Menu">
                     <i data-lucide="menu" class="w-6 h-6"></i>
@@ -126,12 +91,11 @@
 
     <div id="mobile-menu" class="fixed inset-0 bg-haven-navy/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-500 flex flex-col justify-center items-center gap-6 lg:hidden">
         <button class="absolute top-6 right-6 text-white p-2" onclick="toggleMenu()"><i data-lucide="x" class="w-8 h-8"></i></button>
-        <a href="#about" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">About</a>
-        <a href="#services" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">Services</a>
-        <a href="#portfolio" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">Projects</a>
-        <a href="#areas" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">Areas</a>
-        <a href="#reviews" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">Reviews</a>
-        <a href="#contact" class="mt-4 bg-haven-gold text-haven-navy px-8 py-3 rounded-sm font-bold text-lg" onclick="toggleMenu()">Get a Quote</a>
+        <a href="about.html" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">About</a>
+        <a href="services.html" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">Services</a>
+        <a href="projects.html" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">Projects</a>
+        <a href="contact.html" class="text-2xl font-serif text-white hover:text-haven-gold transition" onclick="toggleMenu()">Contact</a>
+        <a href="contact.html" class="mt-4 bg-haven-gold text-haven-navy px-8 py-3 rounded-sm font-bold text-lg" onclick="toggleMenu()">Get a Quote</a>
         <a href="tel:+211925888028" class="text-haven-gold text-xl font-bold">092 588 8028</a>
     </div>
 
@@ -150,8 +114,8 @@
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-medium leading-[1.15]">Building Excellence <br><span class="italic text-gradient-gold">in South Sudan</span></h1>
                     <p class="text-base sm:text-lg text-gray-200 font-light max-w-lg mt-6 leading-relaxed">Residential, commercial, finishing & precast mouldings. Durable, modern, elegant construction solutions since 2011.</p>
                     <div class="flex flex-wrap gap-5 mt-8">
-                        <a href="#contact" class="btn-luxury bg-haven-gold hover:bg-white text-haven-navy font-bold py-3.5 px-8 rounded-sm uppercase tracking-wider text-sm">Start Your Project</a>
-                        <a href="#portfolio" class="btn-luxury border border-white/40 hover:border-haven-gold hover:text-haven-gold text-white font-bold py-3.5 px-8 rounded-sm uppercase tracking-wider text-sm">View Projects</a>
+                        <a href="contact.html" class="btn-luxury bg-haven-gold hover:bg-white text-haven-navy font-bold py-3.5 px-8 rounded-sm uppercase tracking-wider text-sm">Start Your Project</a>
+                        <a href="projects.html" class="btn-luxury border border-white/40 hover:border-haven-gold hover:text-haven-gold text-white font-bold py-3.5 px-8 rounded-sm uppercase tracking-wider text-sm">View Projects</a>
                     </div>
                     <div class="flex flex-wrap gap-5 mt-8 text-sm text-gray-300">
                         <span class="flex items-center gap-2"><i data-lucide="check-circle" class="text-haven-gold w-4 h-4"></i>12+ Years</span>
@@ -219,7 +183,7 @@
                         <li class="flex gap-3"><i data-lucide="check" class="text-haven-gold w-5 h-5"></i><span>On-time delivery & transparent costing</span></li>
                         <li class="flex gap-3"><i data-lucide="check" class="text-haven-gold w-5 h-5"></i><span>Structural warranty & aftercare</span></li>
                     </ul>
-                    <a href="#contact" class="inline-block border-b-2 border-haven-gold font-bold uppercase text-sm tracking-wider hover:text-haven-gold transition">Meet Our Team →</a>
+                    <a href="about.html" class="inline-block border-b-2 border-haven-gold font-bold uppercase text-sm tracking-wider hover:text-haven-gold transition">Meet Our Team →</a>
                 </div>
             </div>
         </div>
@@ -234,21 +198,21 @@
                 <p class="text-gray-500 mt-3">Residential, commercial, finishing, precast & beyond.</p>
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
-                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format" alt="Residential Building" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2 rounded-sm"><i data-lucide="home" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Residential & Commercial Building</h3><p class="text-gray-600 text-sm mt-2">Luxury villas, apartment complexes, office buildings, and retail spaces built to last.</p><a href="#contact" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
-                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-100"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&auto=format" alt="Interior Finishing" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="paint-roller" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Interior & Exterior Finishing</h3><p class="text-gray-600 text-sm mt-2">Elegant plastering, cladding, tiling, painting, and premium finishes for timeless appeal.</p><a href="#contact" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
-                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-200"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format" alt="Renovations" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="refresh-cw" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Renovations & Remodeling</h3><p class="text-gray-600 text-sm mt-2">Revitalize homes and commercial spaces with modern upgrades, extensions, and structural improvements.</p><a href="#contact" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
-                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&auto=format" alt="Precast Mouldings" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="box" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Precast Mouldings</h3><p class="text-gray-600 text-sm mt-2">High-quality concrete elements, decorative mouldings, and structural components with factory precision.</p><a href="#contact" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
-                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-100"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format" alt="Project Design" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="pen-ruler" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Architectural Design & Planning</h3><p class="text-gray-600 text-sm mt-2">Custom blueprints, 3D visualizations, structural engineering, and permit assistance.</p><a href="#contact" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
-                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-200"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06?w=600&auto=format" alt="Material Supply" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="truck" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Trading & Material Supply</h3><p class="text-gray-600 text-sm mt-2">Premium cement, steel, tiles, and construction materials from trusted sources.</p><a href="#contact" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
+                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format" alt="Residential Building" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2 rounded-sm"><i data-lucide="home" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Residential & Commercial Building</h3><p class="text-gray-600 text-sm mt-2">Luxury villas, apartment complexes, office buildings, and retail spaces built to last.</p><a href="services.html" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
+                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-100"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&auto=format" alt="Interior Finishing" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="paint-roller" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Interior & Exterior Finishing</h3><p class="text-gray-600 text-sm mt-2">Elegant plastering, cladding, tiling, painting, and premium finishes for timeless appeal.</p><a href="services.html" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
+                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-200"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format" alt="Renovations" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="refresh-cw" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Renovations & Remodeling</h3><p class="text-gray-600 text-sm mt-2">Revitalize homes and commercial spaces with modern upgrades, extensions, and structural improvements.</p><a href="services.html" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
+                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&auto=format" alt="Precast Mouldings" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="box" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Precast Mouldings</h3><p class="text-gray-600 text-sm mt-2">High-quality concrete elements, decorative mouldings, and structural components with factory precision.</p><a href="services.html" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
+                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-100"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format" alt="Project Design" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="pen-ruler" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Architectural Design & Planning</h3><p class="text-gray-600 text-sm mt-2">Custom blueprints, 3D visualizations, structural engineering, and permit assistance.</p><a href="services.html" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
+                <div class="service-card bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl reveal delay-200"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06?w=600&auto=format" alt="Material Supply" class="img-zoom w-full h-full object-cover" loading="lazy"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="truck" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Trading & Material Supply</h3><p class="text-gray-600 text-sm mt-2">Premium cement, steel, tiles, and construction materials from trusted sources.</p><a href="services.html" class="inline-block mt-4 text-xs font-bold uppercase tracking-wider text-haven-navy hover:text-haven-gold">Learn more →</a></div></div>
             </div>
-            <div class="text-center mt-12"><a href="#contact" class="inline-flex bg-haven-navy text-white hover:bg-haven-gold hover:text-haven-navy font-bold py-4 px-8 rounded-sm transition uppercase text-sm tracking-wider">Schedule Free Consultation</a></div>
+            <div class="text-center mt-12"><a href="contact.html" class="inline-flex bg-haven-navy text-white hover:bg-haven-gold hover:text-haven-navy font-bold py-4 px-8 rounded-sm transition uppercase text-sm tracking-wider">Schedule Free Consultation</a></div>
         </div>
     </section>
 
     <!-- Portfolio / Projects -->
     <section id="portfolio" class="py-20 md:py-28 bg-haven-navy text-white relative">
         <div class="container mx-auto px-5 lg:px-8">
-            <div class="flex flex-wrap justify-between items-end mb-12 gap-4"><div><h4 class="text-haven-gold uppercase text-sm font-bold">Portfolio</h4><h2 class="text-3xl md:text-4xl font-serif">Recent Landmark Projects</h2></div><a href="#" class="border border-white/30 px-5 py-2 text-sm uppercase tracking-wider hover:bg-white hover:text-haven-navy transition">View All →</a></div>
+            <div class="flex flex-wrap justify-between items-end mb-12 gap-4"><div><h4 class="text-haven-gold uppercase text-sm font-bold">Portfolio</h4><h2 class="text-3xl md:text-4xl font-serif">Recent Landmark Projects</h2></div><a href="projects.html" class="border border-white/30 px-5 py-2 text-sm uppercase tracking-wider hover:bg-white hover:text-haven-navy transition">View All →</a></div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="img-zoom-container relative h-72 rounded-sm overflow-hidden group"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&auto=format" class="img-zoom w-full h-full object-cover" alt="Modern Villa Juba"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition"><div class="absolute bottom-5 left-5"><h3 class="text-xl font-serif">Modern Luxury Villa</h3><p class="text-haven-gold text-sm">Residential | Juba Central</p></div></div></div>
                 <div class="img-zoom-container relative h-72 rounded-sm overflow-hidden group"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format" class="img-zoom w-full h-full object-cover" alt="Commercial Complex Kator"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent opacity-0 group-hover:opacity-100 transition"><div class="absolute bottom-5 left-5"><h3 class="text-xl font-serif">Kator Business Center</h3><p class="text-haven-gold text-sm">Commercial Building</p></div></div></div>
@@ -257,64 +221,15 @@
         </div>
     </section>
 
-    <!-- Service Areas: Juba Neighborhoods -->
-    <section id="areas" class="py-16 md:py-24 bg-gray-50">
-        <div class="container mx-auto px-5 text-center">
-            <h4 class="text-haven-gold uppercase text-sm font-bold">Service Areas</h4>
-            <h2 class="text-3xl md:text-4xl font-serif text-haven-navy mt-2">Serving Greater Juba & Surroundings</h2>
-            <div class="flex flex-wrap justify-center gap-3 mt-10 max-w-4xl mx-auto">
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition cursor-default">Juba Central</span>
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition">Kator</span>
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition">Munuki</span>
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition">Gumbo</span>
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition">Rock City</span>
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition">Hai Referendum</span>
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition">Lologo</span>
-                <span class="px-5 py-2.5 bg-white shadow-sm rounded-full text-sm font-medium hover:bg-haven-navy hover:text-white transition">Nimra Talata</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section id="reviews" class="py-20 md:py-28 bg-white">
-        <div class="container mx-auto px-5">
-            <h2 class="text-3xl md:text-4xl font-serif text-center text-haven-navy">What Our Clients Say</h2>
-            <div class="grid md:grid-cols-3 gap-7 mt-12">
-                <div class="glass-card-light p-7 rounded-sm hover-lift"><div class="flex text-haven-gold mb-3">★★★★★</div><p class="text-gray-600 italic">"Ham Construction built our family home in Juba. The finishing quality and professionalism exceeded expectations. Highly recommend."</p><div class="mt-5"><p class="font-bold">Amira Hassan</p><p class="text-xs text-gray-500">Residential Client, Kator</p></div></div>
-                <div class="glass-card-light p-7 rounded-sm hover-lift"><div class="flex text-haven-gold mb-3">★★★★★</div><p class="text-gray-600 italic">"They handled our commercial office renovation on time and within budget. Great attention to detail and modern finishes."</p><div class="mt-5"><p class="font-bold">John Deng</p><p class="text-xs text-gray-500">Business Owner, Juba Central</p></div></div>
-                <div class="glass-card-light p-7 rounded-sm hover-lift"><div class="flex text-haven-gold mb-3">★★★★★</div><p class="text-gray-600 italic">"Precast mouldings from Ham gave our villa a unique architectural touch. Quality craftsmanship and reliable team."</p><div class="mt-5"><p class="font-bold">Sarah Akech</p><p class="text-xs text-gray-500">Munuki Resident</p></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 md:py-28 bg-haven-navy relative">
-        <div class="container mx-auto px-5 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white reveal-left"><h4 class="text-haven-gold uppercase tracking-widest text-sm">Get In Touch</h4><h2 class="text-3xl md:text-5xl font-serif mt-2">Let's Build Your <span class="text-gradient-gold">Vision</span></h2><p class="text-gray-300 mt-5">Schedule a site visit and free consultation. From concept to completion, we deliver excellence.</p><div class="mt-8 space-y-5"><div class="flex gap-4"><div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i data-lucide="phone" class="text-haven-gold"></i></div><div><p class="text-xs uppercase text-gray-400">Call us</p><a href="tel:+211925888028" class="text-xl font-bold hover:text-haven-gold">092 588 8028</a></div></div><div class="flex gap-4"><div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i data-lucide="mail" class="text-haven-gold"></i></div><div><p class="text-xs uppercase text-gray-400">Email</p><a href="mailto:info@hamconstruction.com" class="text-xl font-bold hover:text-haven-gold">info@hamconstruction.com</a></div></div><div class="flex gap-4"><div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center"><i data-lucide="map-pin" class="text-haven-gold"></i></div><div><p class="text-xs uppercase text-gray-400">Address</p><p class="font-medium">Juba, South Sudan | Central Equatoria</p></div></div></div></div>
-                <div class="glass-card-light p-7 md:p-9 rounded-sm reveal-right"><h3 class="text-2xl font-serif text-haven-navy">Request a Consultation</h3><form class="mt-5 space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Ham Construction & Trading will reach out within 24 hours.');"><div class="grid sm:grid-cols-2 gap-4"><input type="text" placeholder="First Name" required class="border border-gray-300 rounded-sm px-4 py-3"><input type="text" placeholder="Last Name" required class="border border-gray-300 rounded-sm px-4 py-3"></div><input type="email" placeholder="Email Address" required class="w-full border border-gray-300 rounded-sm px-4 py-3"><input type="tel" placeholder="Phone Number" required class="w-full border border-gray-300 rounded-sm px-4 py-3"><select class="w-full border border-gray-300 rounded-sm px-4 py-3"><option>Residential Building</option><option>Commercial Project</option><option>Finishing / Renovation</option><option>Precast Mouldings</option></select><textarea rows="3" placeholder="Tell us about your project vision" class="w-full border border-gray-300 rounded-sm px-4 py-3"></textarea><button type="submit" class="w-full bg-haven-navy text-white hover:bg-haven-gold hover:text-haven-navy font-bold py-3.5 transition uppercase tracking-wider text-sm">Submit Request</button></form></div>
-            </div>
-        </div>
-    </section>
-
     <footer class="bg-haven-charcoal text-white py-12 border-t border-white/10">
         <div class="container mx-auto px-5">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"><div><a href="#" class="flex items-center gap-2 text-xl font-serif font-bold"><i data-lucide="building-2" class="text-haven-gold"></i>Ham Construction</a><p class="text-gray-400 text-sm mt-3">Premium construction & trading company in Juba, South Sudan. Excellence since 2011.</p></div><div><h4 class="text-sm font-bold uppercase">Quick Links</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li><a href="#about" class="hover:text-haven-gold">About</a></li><li><a href="#services" class="hover:text-haven-gold">Services</a></li><li><a href="#portfolio" class="hover:text-haven-gold">Projects</a></li></ul></div><div><h4 class="text-sm font-bold uppercase">Services</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li>Residential Building</li><li>Commercial Construction</li><li>Precast Mouldings</li><li>Finishing & Renovation</li></ul></div><div><h4 class="text-sm font-bold uppercase">Contact</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li>092 588 8028</li><li>info@hamconstruction.com</li><li>Juba, South Sudan</li></ul></div></div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"><div><a href="index.html" class="flex items-center gap-2 text-xl font-serif font-bold"><i data-lucide="building-2" class="text-haven-gold"></i>Ham Construction</a><p class="text-gray-400 text-sm mt-3">Premium construction & trading company in Juba, South Sudan. Excellence since 2011.</p></div><div><h4 class="text-sm font-bold uppercase">Quick Links</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li><a href="about.html" class="hover:text-haven-gold">About</a></li><li><a href="services.html" class="hover:text-haven-gold">Services</a></li><li><a href="projects.html" class="hover:text-haven-gold">Projects</a></li><li><a href="contact.html" class="hover:text-haven-gold">Contact</a></li></ul></div><div><h4 class="text-sm font-bold uppercase">Services</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li>Residential Building</li><li>Commercial Construction</li><li>Precast Mouldings</li><li>Finishing & Renovation</li></ul></div><div><h4 class="text-sm font-bold uppercase">Contact</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li>092 588 8028</li><li>info@hamconstruction.com</li><li>Juba, South Sudan</li></ul></div></div>
             <div class="border-t border-white/10 mt-10 pt-8 text-center text-gray-500 text-xs">© 2026 Ham Construction & Trading Co. Ltd. All rights reserved.</div>
         </div>
     </footer>
 
     <button id="backToTop" class="fixed bottom-6 right-6 w-11 h-11 bg-haven-gold text-haven-navy rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-white z-50"><i data-lucide="arrow-up" class="w-5 h-5 mx-auto"></i></button>
 
-    <script>
-        lucide.createIcons();
-        function toggleMenu(){ const m=document.getElementById('mobile-menu'); m.classList.toggle('translate-x-full'); document.body.style.overflow=m.classList.contains('translate-x-full')?'auto':'hidden'; }
-        window.addEventListener('scroll',()=>{const nav=document.getElementById('navbar'), topBtn=document.getElementById('backToTop'); if(window.scrollY>80){nav.classList.add('glass-nav'); topBtn.classList.remove('opacity-0','pointer-events-none');}else{nav.classList.remove('glass-nav'); topBtn.classList.add('opacity-0','pointer-events-none');}});
-        document.getElementById('backToTop')?.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-        const reveals=document.querySelectorAll('.reveal, .reveal-left, .reveal-right'); const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('active');})},{threshold:0.1}); reveals.forEach(r=>observer.observe(r));
-        document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const href=this.getAttribute('href'); if(href==="#")return; const target=document.querySelector(href); if(target){e.preventDefault(); const offset=80; window.scrollTo({top:target.offsetTop-offset,behavior:'smooth'});}})});
-        if(window.innerWidth>=1024){const dot=document.querySelector('.cursor-dot'), outline=document.querySelector('.cursor-outline'); document.addEventListener('mousemove',(e)=>{dot.style.transform=`translate(${e.clientX-4}px, ${e.clientY-4}px)`; outline.style.transform=`translate(${e.clientX-20}px, ${e.clientY-20}px)`;}); document.querySelectorAll('a,button,.btn-luxury').forEach(el=>{el.addEventListener('mouseenter',()=>{outline.style.width='56px'; outline.style.height='56px'; outline.style.borderColor='#D4AF37';}); el.addEventListener('mouseleave',()=>{outline.style.width='40px'; outline.style.height='40px'; outline.style.borderColor='rgba(212,175,55,0.5)';});});}
-        window.dispatchEvent(new Event('scroll'));
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
