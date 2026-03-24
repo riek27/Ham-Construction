@@ -1,254 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Elite Roofing</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <title>Our Services | Ham Construction & Trading Co. Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { haven: { navy: '#0B1120', charcoal: '#1E293B', gold: '#D4AF37', goldLight: '#F3E5AB', goldDark: '#B89628', aqua: '#2DD4BF', aquaLight: '#5EEAD4', light: '#F8FAFC', gray: '#64748B' } }, fontFamily: { sans: ['Manrope', 'sans-serif'], serif: ['Playfair Display', 'serif'] } } } }
+    </script>
 </head>
-<body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container header-container">
-            <a href="index.html" class="logo">Elite<span>Roofing</span></a>
-            <button class="mobile-menu-btn">☰</button>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="services.html" class="active">Services</a>
-                    <ul class="dropdown-content">
-                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
-                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
-                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
-                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
-                    </ul>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+<body class="antialiased cursor-custom">
+    <div class="cursor-dot hidden lg:block"></div><div class="cursor-outline hidden lg:block"></div>
+    <!-- Navigation (same) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-5 text-white"><div class="container mx-auto px-5 lg:px-8"><div class="flex justify-between items-center"><a href="index.html" class="text-xl md:text-2xl font-serif font-bold tracking-widest uppercase flex items-center gap-2"><i data-lucide="building-2" class="text-haven-gold w-5 h-5"></i><span class="hidden xs:inline">Ham Construction</span></a><div class="hidden lg:flex items-center space-x-7 text-sm font-medium"><a href="about.html" class="hover:text-haven-gold transition">About</a><a href="services.html" class="hover:text-haven-gold transition">Services</a><a href="projects.html" class="hover:text-haven-gold transition">Projects</a><a href="contact.html" class="hover:text-haven-gold transition">Contact</a></div><div class="hidden lg:flex items-center gap-5"><a href="tel:+211925888028" class="text-sm font-semibold text-haven-gold">092 588 8028</a><a href="contact.html" class="btn-luxury bg-haven-gold hover:bg-white text-haven-navy font-bold py-2.5 px-6 rounded-sm">Get Quote</a></div><button class="lg:hidden text-white p-2" onclick="toggleMenu()"><i data-lucide="menu" class="w-6 h-6"></i></button></div></div></nav>
+    <div id="mobile-menu" class="fixed inset-0 bg-haven-navy/95 backdrop-blur-xl z-40 transform translate-x-full transition-transform duration-500 flex flex-col justify-center items-center gap-6 lg:hidden"><button class="absolute top-6 right-6 text-white p-2" onclick="toggleMenu()"><i data-lucide="x" class="w-8 h-8"></i></button><a href="about.html" class="text-2xl font-serif text-white" onclick="toggleMenu()">About</a><a href="services.html" class="text-2xl font-serif text-white" onclick="toggleMenu()">Services</a><a href="projects.html" class="text-2xl font-serif text-white" onclick="toggleMenu()">Projects</a><a href="contact.html" class="text-2xl font-serif text-white" onclick="toggleMenu()">Contact</a><a href="contact.html" class="mt-4 bg-haven-gold text-haven-navy px-8 py-3 rounded-sm font-bold" onclick="toggleMenu()">Get a Quote</a><a href="tel:+211925888028" class="text-haven-gold text-xl font-bold">092 588 8028</a></div>
 
-    <!-- Services Page Content -->
-    <main class="page-content">
-        <section class="services-page">
-            <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <p class="text-center" style="margin-bottom: 50px;">Comprehensive roofing solutions tailored to protect your home and enhance its value.</p>
-                
-                <div id="roof-installation" class="service-detail">
-                    <div class="service-detail-content">
-                        <div class="service-detail-text">
-                            <h3>Roof Installation</h3>
-                            <p>Our comprehensive roof installation service begins with a detailed consultation to understand your needs, preferences, and budget. We then develop a customized plan that considers your home's architecture, local climate conditions, and aesthetic goals.</p>
-                            <p>We work with a wide range of premium roofing materials including architectural shingles, metal roofing, slate, and tile to create a roof that not only protects your home but enhances its curb appeal.</p>
-                            <ul style="margin: 20px 0; padding-left: 20px;">
-                                <li style="margin-bottom: 10px;">• Comprehensive consultation and design</li>
-                                <li style="margin-bottom: 10px;">• Premium material selection</li>
-                                <li style="margin-bottom: 10px;">• Expert installation by certified professionals</li>
-                                <li style="margin-bottom: 10px;">• Quality assurance and final inspection</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Get a Quote</a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="assets/roofr.jpg" alt="Roof Installation">
-                        </div>
-                    </div>
-                    <h4>What's Included:</h4>
-                    <div class="service-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">📐</div>
-                            <h5>Custom Design</h5>
-                            <p>Tailored solutions for your specific home and needs</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🛡️</div>
-                            <h5>Premium Materials</h5>
-                            <p>High-quality, durable roofing materials</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">👨‍🔧</div>
-                            <h5>Expert Installation</h5>
-                            <p>Skilled craftsmen with attention to detail</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="roof-repair" class="service-detail">
-                    <div class="service-detail-content">
-                        <div class="service-detail-text">
-                            <h3>Roof Repair</h3>
-                            <p>From minor leaks to storm damage, our roof repair services restore your roof's integrity and protect your home from further damage. We conduct thorough inspections to identify all issues and provide comprehensive solutions.</p>
-                            <p>Our emergency repair service is available 24/7 for urgent situations, ensuring your home remains protected when you need it most. We use advanced leak detection technology to pinpoint problems accurately.</p>
-                            <ul style="margin: 20px 0; padding-left: 20px;">
-                                <li style="margin-bottom: 10px;">• Emergency leak repair services</li>
-                                <li style="margin-bottom: 10px;">• Storm damage assessment and repair</li>
-                                <li style="margin-bottom: 10px;">• Shingle replacement and repair</li>
-                                <li style="margin-bottom: 10px;">• Flashing and sealant repairs</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Schedule Repair</a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="assets/roof.jpg" alt="Roof Repair">
-                        </div>
-                    </div>
-                    <h4>Common Repair Issues:</h4>
-                    <div class="service-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">💧</div>
-                            <h5>Leak Repair</h5>
-                            <p>Identify and fix sources of water intrusion</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🌪️</div>
-                            <h5>Storm Damage</h5>
-                            <p>Repair damage from wind, hail, and fallen debris</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🔍</div>
-                            <h5>Preventive Maintenance</h5>
-                            <p>Regular inspections to catch issues early</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="roof-replacement" class="service-detail">
-                    <div class="service-detail-content">
-                        <div class="service-detail-text">
-                            <h3>Roof Replacement</h3>
-                            <p>When repairs are no longer sufficient, our roof replacement service provides a complete solution for aging or severely damaged roofs. We carefully remove the existing roof, inspect the underlying structure, and install a new, high-performance roofing system.</p>
-                            <p>Our team manages the entire process efficiently, minimizing disruption to your daily life while delivering exceptional results that will protect your home for decades. We handle all necessary permits and inspections.</p>
-                            <ul style="margin: 20px 0; padding-left: 20px;">
-                                <li style="margin-bottom: 10px;">• Complete roof removal and disposal</li>
-                                <li style="margin-bottom: 10px;">• Structural assessment and repairs</li>
-                                <li style="margin-bottom: 10px;">• New underlayment and roofing materials</li>
-                                <li style="margin-bottom: 10px;">• Final cleanup and inspection</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Get Replacement Quote</a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="assets/roo.jpg" alt="Roof Replacement">
-                        </div>
-                    </div>
-                    <h4>Replacement Process:</h4>
-                    <div class="service-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">📋</div>
-                            <h5>Comprehensive Assessment</h5>
-                            <p>Thorough evaluation of your current roof condition</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🗂️</div>
-                            <h5>Material Selection</h5>
-                            <p>Help choosing the best materials for your home and budget</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">⚡</div>
-                            <h5>Efficient Installation</h5>
-                            <p>Professional installation with minimal disruption</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div id="gutter-installation" class="service-detail">
-                    <div class="service-detail-content">
-                        <div class="service-detail-text">
-                            <h3>Gutter Installation</h3>
-                            <p>Proper gutter systems are essential for protecting your home's foundation and preventing water damage. We design and install custom gutter systems that effectively channel water away from your home.</p>
-                            <p>We offer a variety of gutter materials and styles, including seamless aluminum, copper, and steel, to complement your home's architecture while providing maximum functionality. Our systems include proper downspout placement for optimal water management.</p>
-                            <ul style="margin: 20px 0; padding-left: 20px;">
-                                <li style="margin-bottom: 10px;">• Custom gutter design and measurement</li>
-                                <li style="margin-bottom: 10px;">• Seamless gutter installation</li>
-                                <li style="margin-bottom: 10px;">• Gutter guard systems</li>
-                                <li style="margin-bottom: 10px;">• Downspout and drainage solutions</li>
-                            </ul>
-                            <a href="contact.html" class="btn">Inquire About Gutters</a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="assets/ro.jpg" alt="Gutter Installation">
-                        </div>
-                    </div>
-                    <h4>Gutter Solutions:</h4>
-                    <div class="service-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">🌧️</div>
-                            <h5>Seamless Gutters</h5>
-                            <p>Custom-formed on-site for perfect fit and fewer leaks</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🛡️</div>
-                            <h5>Gutter Guards</h5>
-                            <p>Protection systems to minimize debris buildup</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">💧</div>
-                            <h5>Downspout Systems</h5>
-                            <p>Proper drainage to protect your foundation</p>
-                        </div>
-                    </div>
-                </div>
+    <header class="relative pt-32 pb-20 bg-haven-navy overflow-hidden"><div class="absolute inset-0 z-0 opacity-30"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=2070&auto=format" class="w-full h-full object-cover"></div><div class="container mx-auto px-5 text-center relative z-10"><h1 class="text-4xl md:text-6xl font-serif text-white">Our Services</h1><p class="text-gray-300 mt-4 max-w-2xl mx-auto">Comprehensive construction solutions tailored to your needs.</p></div></header>
 
-                <div class="cta" style="margin-top: 40px;">
-                    <div class="container">
-                        <h2>Not Sure Which Service You Need?</h2>
-                        <p>Contact us for a free inspection and professional recommendation.</p>
-                        <a href="contact.html" class="btn">Get Free Inspection</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section class="py-20 bg-white"><div class="container mx-auto px-5 lg:px-8"><div class="text-center max-w-2xl mx-auto mb-14"><h4 class="text-haven-gold uppercase tracking-widest text-sm font-bold mb-3">What We Offer</h4><h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-haven-navy">Comprehensive Construction Solutions</h2></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="service-card bg-white rounded-sm overflow-hidden shadow-md"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format" class="img-zoom w-full h-full object-cover"><div class="absolute bottom-4 left-4 bg-haven-gold p-2 rounded-sm"><i data-lucide="home" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Residential & Commercial Building</h3><p class="text-gray-600 text-sm mt-2">Luxury villas, apartment complexes, office buildings, and retail spaces built to last.</p></div></div>
+        <div class="service-card bg-white rounded-sm overflow-hidden shadow-md"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&auto=format" class="img-zoom w-full h-full object-cover"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="paint-roller" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Interior & Exterior Finishing</h3><p class="text-gray-600 text-sm mt-2">Elegant plastering, cladding, tiling, painting, and premium finishes for timeless appeal.</p></div></div>
+        <div class="service-card bg-white rounded-sm overflow-hidden shadow-md"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&auto=format" class="img-zoom w-full h-full object-cover"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="refresh-cw" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Renovations & Remodeling</h3><p class="text-gray-600 text-sm mt-2">Revitalize homes and commercial spaces with modern upgrades, extensions, and structural improvements.</p></div></div>
+        <div class="service-card bg-white rounded-sm overflow-hidden shadow-md"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&auto=format" class="img-zoom w-full h-full object-cover"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="box" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Precast Mouldings</h3><p class="text-gray-600 text-sm mt-2">High-quality concrete elements, decorative mouldings, and structural components with factory precision.</p></div></div>
+        <div class="service-card bg-white rounded-sm overflow-hidden shadow-md"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format" class="img-zoom w-full h-full object-cover"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="pen-ruler" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Architectural Design & Planning</h3><p class="text-gray-600 text-sm mt-2">Custom blueprints, 3D visualizations, structural engineering, and permit assistance.</p></div></div>
+        <div class="service-card bg-white rounded-sm overflow-hidden shadow-md"><div class="img-zoom-container h-56"><img src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06?w=600&auto=format" class="img-zoom w-full h-full object-cover"><div class="absolute bottom-4 left-4 bg-haven-gold p-2"><i data-lucide="truck" class="w-5 h-5 text-haven-navy"></i></div></div><div class="p-6"><h3 class="text-xl font-serif font-bold">Trading & Material Supply</h3><p class="text-gray-600 text-sm mt-2">Premium cement, steel, tiles, and construction materials from trusted sources.</p></div></div>
+    </div></div></section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Elite Roofing</h3>
-                    <p>Premium roofing solutions for luxury homes with unmatched craftsmanship and attention to detail.</p>
-                    <div class="social-links">
-                        <a href="#"><span>FB</span></a>
-                        <a href="#"><span>IG</span></a>
-                        <a href="#"><span>TW</span></a>
-                        <a href="#"><span>LI</span></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
-                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
-                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
-                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Info</h3>
-                    <ul class="footer-links">
-                        <li>123 Premium Drive, Luxury District, CA 90210</li>
-                        <li>(555) 123-4567</li>
-                        <li>info@eliteroofing.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Elite Roofing. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <section class="py-20 bg-haven-navy text-white"><div class="container mx-auto px-5 text-center"><h3 class="text-3xl font-serif">Ready to start your project?</h3><p class="mt-3 text-gray-300">Contact us for a free consultation and quote.</p><a href="contact.html" class="inline-block mt-6 bg-haven-gold text-haven-navy font-bold py-3 px-8 rounded-sm hover:bg-white transition">Get a Quote</a></div></section>
 
+    <footer class="bg-haven-charcoal text-white py-12 border-t border-white/10"><div class="container mx-auto px-5"><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"><div><a href="index.html" class="flex items-center gap-2 text-xl font-serif font-bold"><i data-lucide="building-2" class="text-haven-gold"></i>Ham Construction</a><p class="text-gray-400 text-sm mt-3">Premium construction & trading company in Juba, South Sudan.</p></div><div><h4 class="text-sm font-bold uppercase">Quick Links</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li><a href="about.html" class="hover:text-haven-gold">About</a></li><li><a href="services.html" class="hover:text-haven-gold">Services</a></li><li><a href="projects.html" class="hover:text-haven-gold">Projects</a></li><li><a href="contact.html" class="hover:text-haven-gold">Contact</a></li></ul></div><div><h4 class="text-sm font-bold uppercase">Services</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li>Residential Building</li><li>Commercial Construction</li><li>Precast Mouldings</li><li>Finishing & Renovation</li></ul></div><div><h4 class="text-sm font-bold uppercase">Contact</h4><ul class="mt-3 space-y-2 text-gray-400 text-sm"><li>092 588 8028</li><li>info@hamconstruction.com</li><li>Juba, South Sudan</li></ul></div></div><div class="border-t border-white/10 mt-10 pt-8 text-center text-gray-500 text-xs">© 2026 Ham Construction & Trading Co. Ltd. All rights reserved.</div></div></footer>
+    <button id="backToTop" class="fixed bottom-6 right-6 w-11 h-11 bg-haven-gold text-haven-navy rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-white z-50"><i data-lucide="arrow-up" class="w-5 h-5 mx-auto"></i></button>
     <script src="script.js"></script>
 </body>
 </html>
